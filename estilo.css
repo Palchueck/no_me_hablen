@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative; 
+    min-height: 100vh; 
+    background-image: url(LOGODEINICIO.jpg);
+    background-size: cover;
+    font-family: 'Roboto';
+
+}
+body, .contenedor-principal {
+    min-height: 0;
+}
+.titulo h1{
+    color: white;
+    margin: 0 0 20px 0; 
+    font-family: 'sawarabi mincho';
+    font-weight: 50;
+}
+header{
+    height: 30px;
+    width: 100%;
+    background-color: #ad5c2d63  ;
+    padding: 0px 0px 15px 0px;
+    position: absolute;
+}
+
+
+.logo{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    align-items: center;
+    margin: 18px 0 0px 0;
+    
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:  40vh;
+
+}
+
+.eslogan {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    background-color: #ad5c2d95;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin: 0px 0px 40px 0px;
+    font-family: 'Roboto semibold';
+    font-weight: 90;
+}
+
+.inicio {
+    display: inline-block; 
+    font-size: 20px; 
+    text-decoration: none;
+    color: white;
+    background-color: #AD5C2D;
+    padding: 15px 30px 30px 30px; 
+    border-radius: 5px; 
+    transition: background-color 0.5s ease; 
+        box-shadow:  0px 0px 0 0 , 
+        0 0 0 30px #ad5c2d95;
+    text-decoration: none;
+    margin: 0px 0px 75px 0px;
+    font-family: 'Roboto semibold';
+}
+.contenedor h2{
+    margin: 0px 0px 20px 0px;
+}
+.inicio a{
+    text-decoration: none;
+    color: white;
+}
+.inicio:hover {
+    background-color: rgba(60, 72, 30, 0.718); 
+}
+
+.tod{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px 0px 10px 0px;
+}
+
+.tod a{
+    text-decoration: none;
+}
+
+.red{
+    margin: 0% 0% 3% 16%;
+    font-size: 20px;
+    padding: 0px;
+}
+.redes{
+    text-decoration: none;
+    padding: 0px;
+    color: black;
+}
+
+footer{
+    background-color: #FBD2C0 ;
+    padding: 0px;
+    margin: 0% 0px 20px 0px;
+    min-height: 0;
+    position: absolute;
+    width: 100%;
+
+}
+
+#inf{
+    padding: 1px 0px 0px 2.5%;;
+    text-align: center ;
+    background-color: #D2B1A7;
+    margin: 0px;
+}
+#inf h2{
+    font-family: 'Roboto medium';
+}
+
+#inf p{
+    padding: 1px 0px 0px 2.5%;;
+    text-align: center ;
+    background-color: #D2B1A7;
+    margin: 0px;
+    font-family: 'sawarabi mincho';
+    
+
+}
+.icon{
+    width: 30px;
+    margin-left: 30px;
+    list-style: none;
+    
+}
+.fondo {
+    height: 100vh;
+}
