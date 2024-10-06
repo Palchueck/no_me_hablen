@@ -1,6 +1,6 @@
 /* Estilo para el fondo borroso */
 .foggy-background {
-    background: url('../imagenes/fondo.png') no-repeat center center;
+    background: url('fondo.png') no-repeat center center;
     background-size: cover;
     filter: blur(15px);
     -webkit-filter: blur(15px);
