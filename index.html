@@ -1,63 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>Crochet</title>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="estilo.css">
-<meta charset="utf8">
-<meta name= "Keywors" content= "Crochet,accesorios,tejer,ropa">
-<meta name= "author" content= "Sara´s">
-<meta name= "description" content= "Crochet es una pagina---">
-<meta name= "copyright" content= "google Inc.">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<body>
-   <div class="fondo">
-      <header>
-         <div class="titulo">
-               <h1 >Maras & Crochet</h1>
-              
-         </div>
-      </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Polar del Pacífico</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="imagenes/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/stylesIndex.css">
+</head>
+<body class="font-roboto">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <div class="flex items-center">
+                <img src="imagenes/logo.png" alt="Logo" class="h-12 w-12 mr-2"/>
+                <span class="text-lg font-semibold">Clima Polar del Pacífico</span>
+            </div>
+            <nav class="flex items-center space-x-6">
+                <!-- Menú desplegable de Servicios -->
+                <div class="relative group">
+                    <button id="producto">
+                        <span>Servicios</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Menú desplegable -->
+                    <div class="absolute left-0 mt-2 w-48 bg-white shadow-xl rounded-lg hidden group-hover:block">
+                        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200">Servicio 1</a>
+                        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200">Servicio 2</a>
+                        <a href="#" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-200">Servicio 3</a>
+                    </div>
+                </div>
+                
 
-      <div class="logo">
-         <img src="Logo_inicio.png" alt="">
+                <!-- Botón de Productos -->
+                <a href="#" id="producto">Productos</a>
 
-         <div class="contenedor">
-            <div class="eslogan">"Flores que perduran,<br> amigurumis que encantan:<br> Maras & Crochet."</div>
-            <div class="inicio"><a href="facebook.com">Inicio</a></div>
-            
+                <!-- Botón de Inicio de sesión -->
+                <a href="#" id="producto">Inicio sesión</a>
+            </nav>
         </div>
-      </div> 
-    </div>
-   
-      <div id="inf">
-         <h2>UN POCO DE NOSOTROS</h2>
-         <P>Somos un gr  upo de personas que radican en Guerrero, Mexico.<br>
-               Nos encanta formar parte de los detalles que alegran el dia de<br> las 
-               personas. Este proyecto sesentra en conservar la tecnuica de<br> tejido artesanal, 
-               despertar interés en el público por los productos y  procesos<br> de elaboración, 
-               asi promover la aparencia del ezfuerzo y la destreza necesario<br> para crearlo.
-         </P>
-     </div>
-    
-     <footer>
-      <h4 class="red">Redes sociales</h4>
-      <div class="tod">
-         <a href="" class="redes"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>               </div>
-            Instagram</a>
-         <a href="" class="redes"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
-            Facebook</a>
-         <a href="" class="redes"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/></svg>               </div>
-            Tik-tok</a>
-         <a href="" class="redes"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>               </div>
-            Whatsapp</a>
-               </div>
-      </div>
-     </footer>  
-</body>
-</html>
+    </header>
 
+    <main>
+        <section class="relative">
+            <div class="foggy-background w-full" style="height: 600px;"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <img 
+                    src="imagenes/fondo.png" 
+                    alt="Aire acondicionado en una habitación con plantas" 
+                    class="w-[800px] h-[400px] object-cover rounded-lg shadow-lg"
+                />
+            </div>
+        </section>
+        <div class="bg-white bg-opacity-75 py-4">
+            <h1 class="text-center text-2xl font-bold main-title" style="font-size: 45px;">CLIMA POLAR DEL PACIFICO</h1>
+        </div>
+        <!-- Botón -->
+        <div class="bg-white py-4">
+            <div class="container mx-auto text-center">
+                <button id="venConocenos" class="boton-mejorado">¡Ven a conocernos!</button> <!-- Botón mejorado -->
+            </div>
+        </div>
 
+        <!-- Productos -->
+        <div class="container mx-auto text-center py-8">
+            <h1 class="text-4xl font-bold mb-8">Un poco de nuestros productos</h1>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <img alt="Serie Lo7 (Minisplit Lo7)" src="https://storage.googleapis.com/a1aa/image/uWbebaoI12QMEqhs1rTegdla5axt0Und9VmYgTxIMnb4wkjTA.jpg" width="200" height="200"/>
+                    <p class="mt-4">Serie Lo7 (Minisplit Lo7) <a class="text-blue-600" href="#">Link</a></p>
+                </div>
+                <div class="text-center">
+                    <img alt="Serie CL Mini-Split" src="https://storage.googleapis.com/a1aa/image/L531cOALb87JN1remhTqoyfHRUAgrMWiBuPeEDAvVceUDTOOB.jpg" width="200" height="200"/>
+                    <p class="mt-4">Serie CL Mini-Split <a class="text-blue-600" href="#">Link</a></p>
+                </div>
+                <div class="text-center">
+                    <img alt="Máquina de hielo Manitowoc NEO UD-0140A" src="https://storage.googleapis.com/a1aa/image/liQr4hF4R1pYLRQcpS5oyhUZHh3uwVbkRFO5pQJeXIKaYyxJA.jpg" width="200" height="200"/>
+                    <p class="mt-4">Máquina de hielo Manitowoc NEO UD-0140A <a class="text-blue-600" href="#">Link</a></p>
+                </div>
+                <div class="text-center">
+                    <img alt="VRV W Heat Recovery" src="https://storage.googleapis.com/a1aa/image/KS58LeVkGZUdRKQ7fAjDjrSkHj8SDRjfz23sLmZF7MQvhJHnA.jpg" width="200" height= "200"/>
+                    <p class= "mt -4">VRV W Heat Recovery<a href="#"class = "text-blue -600">Link</a></p >
+                </div >
+            </div >
+        </div >
 
+    </main >
+
+     <!-- Footer -->
+     <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="mb-4">
+                <a class="mx-2 text-white" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-2 text-white" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="mx-2 text-white" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="mx-2 text-white" href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="text-sm">©2023 Nombre de la Empresa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
     
-    
+
+</body >
+</html >
